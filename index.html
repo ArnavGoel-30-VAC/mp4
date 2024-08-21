@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Universal Video Player</h1>
+
+        <!-- MP4 Video Selection -->
+        <h2>Select MP4 Video</h2>
+        <input type="file" id="fileInput" accept="video/mp4">
+        <video id="videoPlayer" controls>
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Divider -->
+        <hr>
+
+        <!-- YouTube Video Input -->
+        <h2>Enter YouTube Video URL or ID</h2>
+        <input type="text" id="videoInput" placeholder="Enter YouTube Video ID or URL">
+        <button id="loadVideo">Load YouTube Video</button>
+        <div id="videoContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
